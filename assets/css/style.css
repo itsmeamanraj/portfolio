@@ -1001,6 +1001,10 @@ body .body-overlay {
 .skills .skill .skill-inner img {
     display: block;
     margin: auto auto 29px auto;
+    height: 60px;
+    width: auto;
+    max-width: 60px;
+    object-fit: contain;
 }
 .skills .skill .skill-inner h1 {
     font-size: 30px;
