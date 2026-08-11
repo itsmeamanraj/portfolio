@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Raj - Resume</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #111;
+            background: #fff;
+            line-height: 1.4;
+            font-size: 13.5px;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm 20mm 20mm 20mm;
+            position: relative;
+            background: #fff;
+        }
+        .black-badge {
+            position: absolute;
+            top: 20mm;
+            left: 0;
+            width: 14mm;
+            height: 24mm;
+            background: #000;
+        }
+        .header {
+            margin-bottom: 16px;
+            padding-left: 2mm;
+        }
+        .header h1 {
+            font-size: 32px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+            color: #000;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 4px;
+            column-gap: 20px;
+            font-size: 14px;
+            color: #222;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .contact-item svg {
+            width: 14px;
+            height: 14px;
+            flex-shrink: 0;
+        }
+        .contact-item a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .resume-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            border-top: 1.5px solid #222;
+        }
+        .resume-table tr {
+            border-bottom: 1.5px solid #222;
+        }
+        .resume-table td {
+            vertical-align: top;
+            padding: 14px 0;
+        }
+        .col-label {
+            width: 24%;
+            background-color: #e5d8b8;
+            font-weight: 800;
+            font-size: 15px;
+            padding: 14px 14px !important;
+            color: #000;
+        }
+        .col-content {
+            width: 76%;
+            padding-left: 18px !important;
+            padding-right: 4px !important;
+        }
+        .summary-text {
+            text-align: justify;
+            font-size: 13.5px;
+            line-height: 1.45;
+            color: #111;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4px 16px;
+            font-size: 13px;
+        }
+        .skills-list {
+            list-style: none;
+        }
+        .skills-list li {
+            position: relative;
+            padding-left: 12px;
+            margin-bottom: 3px;
+            line-height: 1.35;
+        }
+        .skills-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            font-size: 14px;
+        }
+        .exp-block {
+            margin-bottom: 14px;
+        }
+        .exp-block:last-child {
+            margin-bottom: 0;
+        }
+        .exp-date {
+            font-weight: 700;
+            font-size: 14px;
+            color: #000;
+        }
+        .exp-role {
+            font-weight: 700;
+            font-size: 14px;
+            color: #000;
+            margin-bottom: 4px;
+        }
+        .exp-role span {
+            font-weight: 400;
+        }
+        .exp-bullets {
+            list-style: none;
+            padding-left: 14px;
+        }
+        .exp-bullets li {
+            position: relative;
+            padding-left: 10px;
+            margin-bottom: 2px;
+            font-size: 13px;
+            color: #222;
+        }
+        .exp-bullets li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+        }
+        .edu-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 12px 20px;
+        }
+        .edu-item {
+            margin-bottom: 8px;
+        }
+        .edu-year {
+            font-weight: 700;
+            font-size: 14px;
+            color: #000;
+        }
+        .edu-degree {
+            font-size: 13.5px;
+            color: #222;
+        }
+        .edu-college {
+            font-weight: 700;
+            font-size: 13.5px;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="black-badge"></div>
+        
+        <div class="header">
+            <h1>Aman Raj</h1>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    <span>+919431023126</span>
+                </div>
+                <div class="contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    <span>Patna (Bihar)</span>
+                </div>
+                <div class="contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                    <span>compilecoding@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 0 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.39 9.74v-8.37H5.07v8.37h2.78z"></path></svg>
+                    <a href="https://linkedin.com/in/itsamanraj/" target="_blank">linkedin.com/in/itsamanraj/</a>
+                </div>
+            </div>
+        </div>
+
+        <table class="resume-table">
+            <tr>
+                <td class="col-label">Summary</td>
+                <td class="col-content">
+                    <p class="summary-text">Versatile PHP Developer with 4+ years connecting customers with vital services and resources via web-based interfaces. Practiced at combining PHP assets with tools such as CSS and JavaScript to generate invaluable solutions. Eager to directly communicate with customers to best suit requirements and fulfill business needs.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-label">Skills</td>
+                <td class="col-content">
+                    <div class="skills-grid">
+                        <ul class="skills-list">
+                            <li>PHP</li>
+                            <li>Codignitor 3</li>
+                            <li>Laravel</li>
+                            <li>Version Control Systems (GiT, GITHUB)</li>
+                            <li>Nginx, Docker, Ec2, Rds, Kafka, Rest api</li>
+                        </ul>
+                        <ul class="skills-list">
+                            <li>Web and Application Servers<br>(Hostinger & Godaddy)</li>
+                            <li>Front-End Programming:<br>HTML5, CSS3, AJAX, Jquery, Javascript</li>
+                            <li>WordPress (Custom theme developmnet)</li>
+                            <li>Databases: MYSQL Server</li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-label">Experience</td>
+                <td class="col-content">
+                    <div class="exp-block">
+                        <div class="exp-date">01/2025 - Current</div>
+                        <div class="exp-role">Full Time Freelancer</div>
+                        <ul class="exp-bullets">
+                            <li>Managed a team of 4–5 members to execute project tasks efficiently.</li>
+                            <li>Coordinated with domestic and international clients effectively.</li>
+                            <li>Handled project planning, task allocation, and timely delivery.</li>
+                            <li>Maintained strong client relationships and ensured smooth communication.</li>
+                        </ul>
+                    </div>
+
+                    <div class="exp-block">
+                        <div class="exp-date">02/2023 - 12/2024</div>
+                        <div class="exp-role">PHP Developer, <strong>Parcelx</strong>, New Delhi</div>
+                        <ul class="exp-bullets">
+                            <li>Implemented MySQL databases for a variety of applications.</li>
+                            <li>Designed user interfaces using AJAX technologies.</li>
+                            <li>Integrated third-party APIs into existing systems.</li>
+                            <li>Maintained version control systems such as Git.</li>
+                        </ul>
+                    </div>
+
+                    <div class="exp-block">
+                        <div class="exp-date">03/2022 - 09/2022</div>
+                        <div class="exp-role">Executive Web Developer, <strong>AnovIP</strong>, New Delhi</div>
+                        <ul class="exp-bullets">
+                            <li>Developed web applications using HTML, CSS, JavaScript and jQuery.</li>
+                            <li>Designed database schemas to store user data securely.</li>
+                            <li>Created custom WordPress themes from scratch.</li>
+                        </ul>
+                    </div>
+
+                    <div class="exp-block">
+                        <div class="exp-date">08/2021 - 02/2022</div>
+                        <div class="exp-role">Jr. PHP Developer, <strong>Candid</strong>, New Delhi</div>
+                        <ul class="exp-bullets">
+                            <li>Developed web applications using HTML, CSS, JavaScript and jQuery.</li>
+                            <li>Established hosting for each website and completed go-live process by uploading sites to host account.</li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-label">Education &<br>Training</td>
+                <td class="col-content">
+                    <div class="edu-grid">
+                        <div>
+                            <div class="edu-item">
+                                <div class="edu-year">2018</div>
+                                <div class="edu-degree">12th - 55%</div>
+                                <div class="edu-college">Rajendra College, Bihar</div>
+                            </div>
+                            <div class="edu-item">
+                                <div class="edu-year">2016</div>
+                                <div class="edu-degree">10th - 76%</div>
+                                <div class="edu-college">LNB High School, Bihar</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="edu-item">
+                                <div class="edu-year">2021</div>
+                                <div class="edu-degree">Bca - 76%</div>
+                                <div class="edu-college">CGC Jhanjheri, Chandigarh</div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
